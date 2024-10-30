@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Bootstrap/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+  <title>Contact Us</title>
+  <script>
+    function showConfirmation(event) {
+        event.preventDefault(); 
+        alert("Successfully Submitted!"); 
+        document.getElementById("form").reset();
+    }
+  </script>
+</head>
+<body class="body_home">
+
+  <!--Navigation Bar-->
+   <div class="navbar">
+    <div class="navbar_logo"><a href="index.html"><img src="Images/Logo.png"></a></div>
+    <div class="navbar_items">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Services.html">SERVICES</a></li>
+        <li><a href="About_us.html">ABOUT US</a></li>
+        <li><a href="Contact_us.html">CONTACT US</a></li>
+      </ul>
+    </div>
+   </div> 
+  <hr>
+   
+  <!--content-->
+  <div class="contact_us">
+    <h2>Contact Us</h2>
+    <div class="contact_us_main">
+    <div class="contact_us_box">
+      <div class="contact_us_box_topic">
+      <h3>Reach Out and Locate Us</h3>
+      </div>
+      <div class="contact_us_box_content">
+     <div>
+       <h5>Address:</h5>
+       <span>17 Ward Pl,<br>Colombo 00700.</span>
+       <h5>Contact Line:</h5>
+       <span><a href="tel:+94117969969">0117 969 969</a></span>
+       <h5>Email:</h5>
+       <span><a href="mailto:info@apexhealth.com">info@apexhealth.com</a></span>
+       <h5>Hours of Operation:</h5>
+       <span>Open 24 hours, 7 days a week</span>
+     </div>
+     <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2140.8520576335063!2d79.86643059953468!3d6.9170116879058146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25973991e9edd%3A0x5fc81b9f00c06e9a!2s17%20Ward%20Pl%2C%20Colombo%2000700!5e0!3m2!1sen!2slk!4v1729485388983!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+     </div>
+    </div>
+    </div>
+  </div>
+
+    <!--form-->
+    <div class="main-form">
+      <div class="form">
+        <form onsubmit="showConfirmation(event)" id="form">
+          <h3>Inquire Now</h3><br>
+          <input type="text" name="name" id="name" placeholder="Name" required><br>
+          <input type="text" name="contact" id="contact" placeholder="Contact Number" required><br>
+          <input type="text" name="email" id="email" placeholder="Email Address" required><br>
+          <input type="text" name="address" id="address" placeholder="Address"><br>
+          <textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+          <input type="submit" value="Submit" class="submit">
+        </form>
+      </div>
+    </div>
+
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer_content">
+      <div class="columns">
+        <p class="follow">Follow Us on</p>
+        <div class="social_media">
+        <div class="facebook"><a href="https://www.facebook.com" target="_blank" class="icons"><i class="bi bi-facebook"></i></a></div>
+        <div class="twitter"><a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a></div>
+        <div class="instagram"><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></div>
+        <div class="linkedin"><a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></div> 
+        <div class="youtube"><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a></div>
+        </div>
+      </div>
+      <div class="columns">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="About_us.html">About Us</a></li>
+        <li><a href="Contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="columns">
+        <i class="bi bi-geo-alt-fill"></i> &nbsp;<span>17 Ward Pl, Colombo 00700.</span><br>
+        <i class="bi bi-envelope-at-fill"></i> &nbsp;<span>info@apexhealth.com</span><br>
+        <i class="bi bi-telephone-fill"></i> &nbsp;<span>0117 969 969</span><br>
+      </div>
+    </div>
+  </footer> 
+  <div class="copyright">
+    <span>&copy; 2024 Apex Health Hospital. All Rights Reserved.</span><br>
+    <span>Design and Development by Kaveesha Sandeepani</span>
+  </div>
+</body>
+</html>
+  

@@ -1,0 +1,936 @@
+/*Navigation Bar*/
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.navbar_logo{
+    padding-left: 30px;
+}
+
+.navbar_logo img{
+    width: 120px;
+    height: 120px;
+    border: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.navbar_items{
+    overflow: hidden;
+}
+
+.navbar_items ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar_items li{
+    float: left;
+    padding: 17px 17px;
+    transition: transform 0.3s ease;
+}
+
+.navbar_items li :hover{
+    transform: scale(1.1);  
+}
+
+.navbar_items li a{
+    display: block;
+    color:  rgb(0,0,128);
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 30px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+/*Background*/
+.body_home{
+    background-image: url('Images/Background.jpg');
+}
+
+/*Slide Images*/ 
+.custom-carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*Welcome*/
+.welcome{
+    text-align: center;
+    padding: 25px;
+}
+
+.p1{
+    font-family: monospace;
+    color: rgb(128,128,128);
+}
+
+.welcome h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    color: rgb(25,25,112);
+}
+
+/*About Us Button*/
+.button{
+    transition-duration: 0.4s;
+    background-color: white;
+    border: 2px solid rgb(0,149,182);
+    border-radius: 12px;
+    padding: 4px 4px;
+}
+
+.button:hover {
+    background-color: rgb(0,149,182); 
+    color: white;
+}
+
+/*Facilities*/
+.facilities{
+    padding: 35px 35px;
+}
+
+.facilities_topic{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(6,42,120);
+}
+
+.facilities_icons{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 30px 30px;
+  padding-left: 80px;
+}
+
+
+  
+.icon{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.icon i {
+    font-size: 50px; 
+    margin-right: 8px;
+    color: rgb(0,147,175);
+    display: flex; 
+    
+}
+
+.icon span{
+    border: none;
+    padding: 20px;
+    font-size: 27px;
+    text-align: left;
+  } 
+
+/*Services*/
+.services_home{
+    padding: 35px 35px;
+}
+
+.services_home_topic{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(6,42,120);
+}
+
+.services_home_icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px 30px;
+    padding-left: 80px;
+    column-gap: 30px;
+    row-gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service_icon{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 50px 50px;
+    background-color: white;  
+}
+
+.services_home_icons :hover {
+    transform: scale(1.05);
+}
+
+
+.service_icon i {
+    font-size: 50px; 
+    margin-right: 8px;
+    color: rgb(0,147,175);
+    display: flex; 
+    
+}
+
+.service_icon span{
+    border: none;
+    padding: 20px;
+    font-size: 27px;
+    text-align: left;
+    color: black;
+}
+
+.services_home a{
+    text-decoration: none;
+}
+
+
+
+/*footer*/ 
+/*Social Media Buttons*/
+.bi-facebook{
+    font-size: 40px;
+    color: white;
+}
+
+.bi-facebook:hover{
+    color: #1877f2;
+}
+
+.facebook{
+    transition: transform 0.3s ease;
+}
+
+.facebook:hover{
+    transform: scale(1.1);
+}
+
+.bi-twitter{
+    font-size: 40px;
+    color: white;
+}
+
+.bi-twitter:hover{
+    color: #1da1f2;
+}
+
+.twitter{
+    transition: transform 0.3s ease;
+}
+
+.twitter:hover{
+    transform: scale(1.1);
+}
+
+
+.bi-instagram{
+    font-size: 40px;
+    color: white;
+}
+
+.bi-instagram:hover{
+    background: linear-gradient(315deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instagram{
+    transition: transform 0.3s ease;
+}
+
+.instagram:hover{
+    transform: scale(1.1);
+}
+
+.bi-linkedin{
+    font-size: 40px;
+    color: white;
+}
+
+.bi-linkedin:hover{
+    color: #0077b5;
+}
+
+.linkedin{
+    transition: transform 0.3s ease;
+}
+
+.linkedin:hover{
+    transform: scale(1.1);
+}
+
+.bi-youtube{
+    font-size: 40px;
+    color: white;
+}
+
+.bi-youtube:hover{
+    color: #ff0000;
+}
+
+.youtube{
+    transition: transform 0.3s ease;
+}
+
+.youtube:hover{
+    transform: scale(1.1);
+}
+
+
+.social_media{
+    display: flex;
+    gap: 15px;
+}
+
+/*footer Content*/
+.footer{
+    background-color: rgb(2, 2, 144);
+    padding: 25px;
+}
+
+.follow {
+    font-size: 20px;
+    font-family: fantasy;
+    color: white;
+}
+
+.footer_content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.columns{
+    flex: 1;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer span{
+    color: white;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.bi-geo-alt-fill{
+    color: white;
+}
+
+.bi-envelope-at-fill{
+    color: white;
+}
+
+.bi-telephone-fill{
+    color: white;
+}
+
+.copyright{
+    background-color: rgb(1, 1, 93);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/*------------------------------ABOUT US------------------------------------*/
+
+.about_img01{
+    width: 100%;
+    height: 470px;
+}
+
+.about_topic{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(6,42,120);
+    font-weight: bold;
+}
+
+.about_us{
+    padding: 30px 30px;
+    padding-left: 35px;
+}
+
+.mission{
+    text-align: center;
+}
+
+.mission h3{
+    text-decoration: underline;
+    color: rgb(0,147,175);
+    font-weight: bold;
+}
+
+.vision{
+    text-align: center;
+    padding: 25px 25px;
+}
+
+.vision h3{
+    text-decoration: underline;
+    color: rgb(0,147,175);
+    font-weight: bold;
+}
+
+/*-----------------------------Services-----------------------------*/
+
+.services_topic {
+    color: rgb(6,42,120);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-left: 25px;
+}
+.services {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  padding: 10px;
+  }
+
+.services_content {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.services_content img{
+    height: 50%;
+    width: 50%;
+}
+
+.services_content span{
+    text-align: center;
+    color: rgb(0,147,175);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*----------------------------------------Doctor Channeling----------------------------------*/
+
+.doctor_channeling{
+    background-image:url('Images/Channeling.jpg');
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.channeling_topic{
+    width: 300px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.channeling_topic h2{
+    color: rgb(6,42,120);
+    font-weight: bolder;
+}
+
+.channeling_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.channeling_content p{
+    width: 720px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.channeling_content2{
+    padding: 35px 35px;
+}
+
+.channeling_content2 ul{
+    list-style-type: square;
+}
+
+.channeling_content3{
+    padding: 35px 35px;
+}
+
+.channeling_content3 ul{
+    list-style-type: square;
+}
+
+.channeling_content2 h3{
+    color: rgb(6,42,120);
+}
+
+.channeling_content3 h3{
+    color: rgb(6,42,120);
+}
+
+/*---------------------------------------------Pharmacy-----------------------------------*/
+
+.pharmacy{
+    background-image:url('Images/Pharmacy_2.png');
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.pharmacy_topic{
+    width: 300px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pharmacy_topic h2{
+    color: rgb(6,42,120);
+    font-weight: bolder;
+}
+
+.pharmacy_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.pharmacy_content p{
+    width: 720px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.pharmacy_content2{
+    padding: 35px 35px;
+}
+
+.pharmacy_content2 ul{
+    list-style-type: square;
+}
+
+.pharmacy_content3{
+    padding: 35px 35px;
+}
+
+.pharmacy_content3 ul{
+    list-style-type: square;
+}
+
+.pharmacy_content2 h3{
+    color: rgb(6,42,120);
+}
+
+.pharmacy_content3 h3{
+    color: rgb(6,42,120);
+}
+
+/*---------------------------------------Surgical Services--------------------------------------*/
+
+.surgical{
+    background-image:url('Images/Surgical_2.png');
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.surgical_topic{
+    width: 300px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.surgical_topic h2{
+    color: rgb(6,42,120);
+    font-weight: bolder;
+}
+
+.surgical_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.surgical_content p{
+    width: 720px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.surgical_content2{
+    padding: 35px 35px;
+}
+
+.surgical_content2 ul{
+    list-style-type: square;
+}
+
+.surgical_content3{
+    padding: 35px 35px;
+}
+
+.surgical_content3 ul{
+    list-style-type: square;
+}
+
+.surgical_content2 h3{
+    color: rgb(6,42,120);
+}
+
+.surgical_content3 h3{
+    color: rgb(6,42,120);
+}
+
+/*--------------------------------------Cardiology Unit----------------------------------*/
+
+.cardiology{
+    background-image:url('Images/Cardiology2.jpg');
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.cardiology_topic{
+    width: 300px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cardiology_topic h2{
+    color: rgb(6,42,120);
+    font-weight: bolder;
+}
+
+.cardiology_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.cardiology_content p{
+    width: 720px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.cardiology_content2{
+    padding: 35px 35px;
+}
+
+.cardiology_content2 ul{
+    list-style-type: square;
+}
+
+.cardiology_content3{
+    padding: 35px 35px;
+}
+
+.cardilogy_content3 ul{
+    list-style-type: square;
+}
+
+.cardiology_content2 h3{
+    color: rgb(6,42,120);
+}
+
+.cardiology_content3 h3{
+    color: rgb(6,42,120);
+}
+
+/*----------------------------------Maternal and Newborn Care--------------------------------*/
+
+.maternal{
+    background-image:url('Images/Maternal_newborn.jpg');
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.maternal_topic{
+    width: 450px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.maternal_topic h2{
+    color: rgb(6,42,120);
+    font-weight: bolder;
+}
+
+.maternal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.maternal_content p{
+    width: 720px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.maternal_content2{
+    padding: 35px 35px;
+}
+
+.maternal_content2 ul{
+    list-style-type: square;
+}
+
+.maternal_content3{
+    padding: 35px 35px;
+}
+
+.maternal_content3 ul{
+    list-style-type: square;
+}
+
+.maternal_content2 h3{
+    color: rgb(6,42,120);
+}
+
+.maternal_content3 h3{
+    color: rgb(6,42,120);
+}
+
+/*-------------------------------------Dental Services---------------------------------------*/
+
+.dental{
+    background-image:url('Images/Dental_3.png');
+    height: 750px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.dental_topic{
+    width: 450px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dental_topic h2{
+    color: rgb(6,42,120);
+    font-weight: bolder;
+}
+
+.dental_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+
+.dental_content p{
+    width: 720px;
+    background-color: rgba(255,255,255,.2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.dental_content2{
+    padding: 35px 35px;
+}
+
+.dental_content2 ul{
+    list-style-type: square;
+}
+
+.dental_content3{
+    padding: 35px 35px;
+}
+
+.dental_content3 ul{
+    list-style-type: square;
+}
+
+.dental_content2 h3{
+    color: rgb(6,42,120);
+}
+
+.dental_content3 h3{
+    color: rgb(6,42,120);
+}
+
+/*---------------------------------------Contact Us----------------------------------------------*/
+
+.contact_us{
+    padding: 30px 30px;
+    padding-left: 35px;
+}
+
+.contact_us h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(6,42,120);
+    font-weight: bold;
+}
+
+.contact_us h5{
+    padding-top: 30px;
+}
+
+.contact_us_main{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.contact_us_box_topic{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contact_us_box_topic h3{
+    font-weight: bold;
+    color: rgb(0,149,182);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact_us_box{
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.contact_us_box_content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.map{
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
+    padding-left: 90px;
+}
+
+.contact_us_box iframe{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.contact_us_box a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact_us_box span{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-form{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 40px;
+}
+
+.form{
+    display: flex;
+    width: 800px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.form h3{
+    color: rgb(0,149,182);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.form input{
+    margin: 10px;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.form textarea{
+    margin: 10px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.submit{
+    width: 100px !important;
+    display: flex;
+    border-radius: 50px;
+    background-color: rgb(2,2,144);
+    color: white;
+}
+
+.submit:hover{
+    background-color: rgb(1,1,93); 
+    color: white;
+}
+
+
+
+
+
+
+
